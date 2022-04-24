@@ -1,4 +1,4 @@
-# Repositorio Grupo 1 2021-2
+# Repositorio Grupo 1 2022-1
 
 Este es el repositorio para trabajar en la segunda etapa del proyecto de Pensamiento Visual.
 
