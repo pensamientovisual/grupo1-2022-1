@@ -1,10 +1,133 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css\estilos.css">
+    <script>  </script>
     <title>Grupo 1</title>
+        
 </head>
+    <div id="titulos">
+        <header>
+            <div id="titulo"> <br> Métodos Anticonceptivos </div>
+            <p id="subtitulo"> Comparación de métodos anticonceptivos respecto a efectividad, durabilidad, entre otros. </p>
+        </header>
+ 
+    <style>
+    /*Referencia: https://www.lawebdelprogramador.com/codigo/CSS/5294-Grafico-de-barras-utilizando-unicamente-HTML-y-CSS.html*/
+    .chart-wrap {
+        --chart-width:420px;
+        --grid-color:#aaa;
+        --bar-color:red;
+        --bar-thickness:40px;
+        --bar-rounded: 3px;
+        --bar-spacing:10px;
+ 
+        font-family:sans-serif;
+        width:var(--chart-width);
+    }
+ 
+    .chart-wrap .title{
+        font-weight:bold;
+        padding:1.8em 0;
+        text-align:center;
+        white-space:nowrap;
+    }
+ 
+    /* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
+    .chart-wrap.horizontal .grid{
+        transform:rotate(-90deg);
+    }
+ 
+    .chart-wrap.horizontal .bar::after{
+        /* giramos las letras para horizontal*/
+        transform: rotate(45deg);
+        padding-top:0px;
+        display: block;
+    }
+ 
+    .chart-wrap .grid{
+        margin-left:50px;
+        position:relative;
+        padding:5px 0 5px 0;
+        height:100%;
+        width:100%;
+        border-left:2px solid var(--grid-color);
+    }
+ 
+    /* posicionamos el % del gráfico*/
+    .chart-wrap .grid::before{
+        font-size:0.8em;
+        font-weight:bold;
+        content:'0%';
+        position:absolute;
+        left:-0.5em;
+        top:-1.5em;
+    }
+    .chart-wrap .grid::after{
+        font-size:0.8em;
+        font-weight:bold;
+        content:'100%';
+        position:absolute;
+        right:-1.5em;
+        top:-1.5em;
+    }
+ 
+    /* giramos las valores de 0% y 100% para horizontal */
+    .chart-wrap.horizontal .grid::before, .chart-wrap.horizontal .grid::after {
+        transform: rotate(90deg);
+    }
+ 
+    .chart-wrap .bar {
+        width: var(--bar-value);
+        height:var(--bar-thickness);
+        margin:var(--bar-spacing) 0;
+        background-color:var(--bar-color);
+        border-radius:0 var(--bar-rounded) var(--bar-rounded) 0;
+    }
+ 
+    .chart-wrap .bar:hover{
+        opacity:0.7;
+    }
+ 
+    .chart-wrap .bar::after{
+        content:attr(data-name);
+        margin-left:100%;
+        padding:10px;
+        display:inline-block;
+        white-space:nowrap;
+    }
+ 
+    </style>
+</head>
+
 <body>
-    <h1>Hello world</h1>
+
+<div class="chart-wrap"> <!-- quitar el estilo "horizontal" para visualizar verticalmente -->
+  <div class="title">Gráfico de anticonceptivos mas eficaces</div>
+  <div class="grid">
+      <div class="bar" href="https://guide.freecodecamp.org" onclick="miAlerta()" id="bar1" style="--bar-value:85%;" data-name="Condón masculino" title="Condón masculino 85%"></div></script>
+      <div class="bar" id="bar2" style="--bar-value:99%;" data-name="Implante" title="Implante 99%"></div>
+      <div class="bar" id="bar3" style="--bar-value:99%;" data-name="DIU" title="DIU 99%"></div>
+      <div class="bar" id="bar4" style="--bar-value:91%;" data-name="Pastillas anticonceptivas" title="Pastillas 91%"></div>
+      <div class="bar" id="bar5" style="--bar-value:94%;" data-name="Inyección" title="Inyección 94%"></div>
+      <div class="bar" id="bar6" style="--bar-value:91%;" data-name="Anillo vaginal" title="Anillo 91%"></div>
+      <div class="bar" id="bar7" style="--bar-value:91%;" data-name="Parche anticonceptivo" title="Parche 91%"></div>
+      <div class="bar" id="bar8" style="--bar-value:88%;" data-name="Diafragma" title="Diafragma 88%"></div>
+
+      <script>
+        function miAlerta(evento) {
+          event.preventDefault();
+          alert("Aún se debe implementar esta parte para que al hacer click se abra otra pagina con mas información y estadisticas");
+        }
+        /* Referencia: https://www.freecodecamp.org/espanol/news/untitled-10/*/
+      </script>
+
+  </div>
+</div>
+ 
+<a target="_blank" title="Bump chart" href="https://www.koolchart.com/demo/bump-chart" title="Bump Chart"> Planeamos hacer algo de este estilo</a>
+
 </body>
 </html>
