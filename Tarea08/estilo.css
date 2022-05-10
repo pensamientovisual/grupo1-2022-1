@@ -1,0 +1,351 @@
+:root {
+  --text-color: #ddd6f0 ;
+  --bg-color: #2F0737 ;
+}
+
+body {
+  font-family: termina, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: 0.5s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+}
+
+section:not(#sectionPin) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: top;
+}
+
+
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 4;
+  overflow-wrap: break-word;
+  hyphens: auto;
+
+  @media (max-width: 768px) {
+    font-size: 16vw;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+h2 {
+font-size: 1rem;
+max-width: 400px;
+margin-bottom: 5rem;
+position: absolute;
+left: 10vw;
+top: 27vw;
+}
+
+h3 {
+  font-size: 1.5rem;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  position: fixed;
+  left: 10vw;
+  top: 5vw;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: lighter;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  position: static;
+  left: 10vw;
+  top: 5vw;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+  max-width: 400px;
+  margin-bottom: 5rem;
+  position: absolute;
+  left: 10vw;
+  top: 30vw;
+}
+
+.credit {
+  font-family: Termina, sans-serif;
+  a {
+    color: var(--text-color);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#sectionPin {
+  height: 500vh;
+  overflow: hidden;
+  display: flex;
+  /left: 0;/
+  background: var(--bg-color);
+  box-sizing: content-box;
+  width: 100%;
+  
+}
+
+.mini-divs {
+  height: 40vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 10vw;
+  position: relative;
+  float: left;
+
+  & > * {
+    min-width: 60vw;
+    padding: 0 5vw;
+  }
+
+}
+
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  box-sizing: content-box;
+
+  & > * {
+    min-width: 60vw;
+    padding: 0vw;
+  }
+}
+
+p {
+  position: absolute;
+  bottom: 10vw;
+  right: 10vw;
+  width: 200px;
+  line-height: 1.5;
+}
+
+
+#date1 {
+  position: relative;
+  top:10vh;
+  left:30vh;
+}
+
+#date2 {
+  position: relative;
+  top:10vh;
+  left:-50vh;
+}
+
+
+#img1 {
+  position: relative;
+  left:0vh;
+  top: 10vh;
+  height: 50vh;
+  width: auto;
+  padding: 0;
+}
+
+#img2 {
+  position: relative;
+  left:0vh;
+  top: 11.5vh;
+  height: 50vh;
+  width: auto;
+  padding: 0;
+}
+
+#img3 {
+  position: relative;
+  left:0vh;
+  top: 10.3vh;
+  height: 50vh;
+  width: auto;
+  padding: 0;
+}
+
+#img4 {
+  position: relative;
+  left:0vh;
+  top: 10.3vh;
+  height: 50vh;
+  width: auto;
+  padding: 0;
+}
+
+#img5 {
+  position: relative;
+  left:0vh;
+  top: 10.3vh;
+  height: 50vh;
+  width: auto;
+  padding: 0;
+}
+
+#img6 {
+  position: relative;
+  left:0vh;
+  top: 10.3vh;
+  height: 50vh;
+  width: auto;
+  padding: 0;
+}
+
+#completa {
+position: relative;
+left:0vh;
+top: 20vh;
+
+height: 68vh;
+width: auto;
+padding: 0;
+}
+
+#fecha1 {
+position:relative;
+left: -10vh;
+top: -5vh;
+}
+
+#fecha2 {
+position:relative;
+left: -22vh;
+top: -5vh;
+}
+
+#fecha3 {
+position:relative;
+left: -12vh;
+top: -5vh;
+}
+
+#fecha4 {
+position:relative;
+left: 2vh;
+top: -5vh; 
+}
+
+#fecha5 {
+position:relative;
+left: 5vh;
+top: -5vh; 
+}
+
+#fecha6 {
+position:relative;
+left: 45vh;
+top: -5vh; 
+}
+#fecha7 {
+position:relative;
+left: 40vh;
+top: -5vh;
+}
+
+#fecha8 {
+position:relative;
+left: 75vh;
+top: -5vh;
+}
+
+#fecha9 {
+position:relative;
+left: 87vh;
+top: -5vh;
+}
+
+#fecha10 {
+position:relative;
+left: 100vh;
+top: -5vh; 
+}
+
+#fecha11 {
+position:relative;
+left: 90vh;
+top: -5vh; 
+}
+
+#fecha12 {
+position:relative;
+left: 90vh;
+top: -5vh; 
+}
+
+#fecha13 {
+position:relative;
+left: 90vh;
+top: -5vh;
+}
+
+#fecha14 {
+position:relative;
+left: 100vh;
+top: -5vh;
+}
+
+#fecha15 {
+position:relative;
+left: 110vh;
+top: -5vh; 
+}
+
+#fecha16 {
+position:relative;
+left: 100vh;
+top: -5vh; 
+}
+
+#img_1995{
+position: relative;
+top: -5vh;
+left: -3vh;
+}
+
+
+#img_2010{
+position: relative;
+top: -5vh;
+
+}
+
+#img_2018{
+position: relative;
+top: -5vh;
+left:-2vh;
+
+}
+
+h6 {
+font-size: 0.5rem;
+font-weight: lighter;
+max-width: 400px;
+margin-bottom: 5rem;
+position: absolute;
+left: 10vw;
+top: 40vw;
+}
